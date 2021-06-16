@@ -162,7 +162,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert to a 3d array</span></span>
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>grid_array <span class="ot">&lt;-</span> <span class="fu">array</span>(grid_values, <span class="at">dim =</span> <span class="fu">c</span>(<span class="fu">length</span>(x), <span class="fu">length</span>(y), <span class="fu">length</span>(z)))</span></code></pre></div>
 <p>Now we can run <code>contour3d()</code> to apply the marching cubes algorithm and return mesh information representing a 3d contour at our desired level, in this case at a value of 4.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate 3d contour from the grid data at a contour level of value 6</span></span>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate 3d contour from the grid data at a contour level of value 4</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>contour_shape <span class="ot">&lt;-</span> <span class="fu">contour3d</span>(</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">griddata =</span> grid_array, </span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">level =</span> <span class="dv">4</span>,</span>

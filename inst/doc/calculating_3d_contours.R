@@ -24,7 +24,7 @@ grid_values <- apply(grid_coords, 1, f)
 grid_array <- array(grid_values, dim = c(length(x), length(y), length(z)))
 
 ## ----calculating_contour------------------------------------------------------
-# Calculate 3d contour from the grid data at a contour level of value 6
+# Calculate 3d contour from the grid data at a contour level of value 4
 contour_shape <- contour3d(
   griddata = grid_array, 
   level = 4,
