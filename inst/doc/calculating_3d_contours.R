@@ -1,4 +1,4 @@
-## ---- include = FALSE---------------------------------------------------------
+## ----include = FALSE----------------------------------------------------------
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
@@ -34,26 +34,26 @@ contour_shape <- contour3d(
 )
 
 ## ----viewing_contour, eval=FALSE----------------------------------------------
-#  # Optionally view the output using the r3js package
-#  # devtools::install_github("shwilks/r3js")
-#  
-#  # Setup plot object
-#  data3js <- r3js::plot3js(
-#    x = x,
-#    y = y,
-#    z = z,
-#    type = "n"
-#  )
-#  
-#  # Add shape according to the calculated contours
-#  data3js <- r3js::shape3js(
-#    data3js,
-#    vertices = contour_shape$vertices,
-#    faces = contour_shape$triangles,
-#    normals = contour_shape$normals,
-#    col = "red"
-#  )
-#  
-#  # View the plot
-#  r3js::r3js(data3js)
+# # Optionally view the output using the r3js package
+# # devtools::install_github("shwilks/r3js")
+# 
+# # Setup plot object
+# data3js <- r3js::plot3js(
+#   x = x,
+#   y = y,
+#   z = z,
+#   type = "n"
+# )
+# 
+# # Add shape according to the calculated contours
+# data3js <- r3js::shape3js(
+#   data3js,
+#   vertices = contour_shape$vertices,
+#   faces = contour_shape$triangles,
+#   normals = contour_shape$normals,
+#   col = "red"
+# )
+# 
+# # View the plot
+# r3js::r3js(data3js)
 

@@ -5,7 +5,7 @@
  * @version 0.2
  * @date    12/08/2002
  *
- * @brief   MarchingCubes Algorithm with modifications by Samuel H. Wilks <sw463@cam.ac.uk>
+ * @brief   MarchingCubes Algorithm with modifications by Samuel H. Wilks <sam.wilks@unimelb.edu.au>
  */
 //________________________________________________
 
@@ -694,7 +694,7 @@ void MarchingCubes::process_cube(float *cube)
 
 //_____________________________________________________________________________
 // Adding triangles
-void MarchingCubes::add_triangle( const char* trig, char n, int v12 ) {
+void MarchingCubes::add_triangle( const signed char* trig, char n, int v12 ) {
 	int i = 0;
 	while(i < 3 * n) {
 		int tv[3];

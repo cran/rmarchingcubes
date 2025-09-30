@@ -1,14 +1,15 @@
 
 <!-- badges: start -->
-[![R-CMD-check](https://github.com/shwilks/rmarchingcubes/workflows/R-CMD-check/badge.svg)](https://github.com/shwilks/rmarchingcubes/actions)
+[![CRAN status](https://www.r-pkg.org/badges/version/rmarchingcubes)](https://CRAN.R-project.org/package=rmarchingcubes)
+[![R-CMD-check](https://github.com/shwilks/rmarchingcubes/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/shwilks/rmarchingcubes/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 # rmarchingcubes
-An R package implementing the efficient marching cubes algorithm written by [Thomas Lewiner](http://thomas.lewiner.org/tomlew_uk.php.html). Minor changes have been made to the code in order to work with the [armadillo](http://arma.sourceforge.net) C++ library.
+An R package implementing the efficient marching cubes algorithm written by [Thomas Lewiner](http://thomas.lewiner.org/tomlew_uk.php.html). Minor changes have been made to the code in order to work with the [armadillo](https://arma.sourceforge.net/) C++ library.
 
 ## Installation
 ```r
-devtools::install_github("shwilks/rmarchingcubes")
+install.packages("rmarchingcubes")
 ```
 
 ## Example usage
